@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Costos 3D</title>
+    <link rel="stylesheet" href="/3ra Preentrega/css/style.css">
+</head>
+<body>
+    <h1>Simulador de Costos para Impresiones 3D</h1>
+
+    <form id="simuladorForm">
+        <label for="material">Material:</label>
+        <select id="material">
+            <option value="">Selecciona un material</option>
+            <option value="PLA">PLA</option>
+            <option value="ABS">ABS</option>
+            <option value="PETG">PETG</option>
+        </select>
+        <br><br>
+
+        <label for="cantidad">Cantidad (gramos):</label>
+        <input type="number" id="cantidad" min="0">
+        <br><br>
+
+        <label for="tiempo">Tiempo (horas):</label>
+        <input type="number" id="tiempo" min="0">
+        <br><br>
+
+        <label for="soporte">¿Incluir soporte?:</label>
+        <input type="checkbox" id="soporte">
+        <br><br>
+
+        <label for="acabado">¿Incluir acabado?:</label>
+        <input type="checkbox" id="acabado">
+        <br><br>
+
+        <button type="submit">Calcular costo</button>
+    </form>
+
+    <div id="error"></div>
+    <div id="resultado"></div>
+
+    <script src="/3ra Preentrega/js/main.js"></script>
+</body>
+</html>
